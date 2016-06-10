@@ -4,8 +4,10 @@
 //
 // **********************************************************************
 
-#pragma once
-
+# define package
+#
+# [["java:package:com.nealma.ice"]]
+#
 module hello4service
 {
 

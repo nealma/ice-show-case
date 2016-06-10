@@ -144,7 +144,7 @@ public class Client extends Ice.Application
     main(String[] args)
     {
         Client app = new Client();
-        int status = app.main("Client", args, "/Users/nealpc/work/java/icedemo/src/main/java/resources/config.client");
+        int status = app.main("Client", args, "/Users/nealpc/work/java/ice-show-case/src/main/java/resources/config.client");
         System.exit(status);
     }
 }
