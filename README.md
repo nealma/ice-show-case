@@ -2,14 +2,17 @@
 ice demo base of zeroC ice-3.6.2
 
 
-###how to run
+###{ IceBox Demo } how to run
 
-use idea "Edit Configurations"
+open idea "Edit Configurations"
 
 name : HelloServer
 
-mai class : IceBox.Server
+main class : IceBox.Server
 
 program arguments : --Ice.Config=/Users/nealpc/work/java/ice-show-case/src/main/java/resources/config.icebox
 
 and then , just run.
+
+
+###{ IceRegister Demo } how to run
