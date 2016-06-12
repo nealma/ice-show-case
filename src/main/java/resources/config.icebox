@@ -14,6 +14,11 @@ Ice.Admin.InstanceName=DemoIceBox
 IceBox.Service.Hello=com.nealma.ice.hello.HelloServiceI --Ice.Config=/Users/nealpc/work/java/ice-show-case/src/main/java/resources/config.service
 
 #
+# The play service
+#
+IceBox.Service.Play=com.nealma.ice.play.PlayServiceI --Ice.Config=/Users/nealpc/work/java/ice-show-case/src/main/java/resources/config.service
+
+#
 # Warn about connection exceptions
 #
 Ice.Warn.Connections=1

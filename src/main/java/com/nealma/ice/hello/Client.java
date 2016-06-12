@@ -7,6 +7,8 @@ package com.nealma.ice.hello;
 
 import hello4service.HelloPrx;
 import hello4service.HelloPrxHelper;
+import play4service.PlayPrx;
+import play4service.PlayPrxHelper;
 
 public class Client extends Ice.Application
 {
@@ -61,6 +63,10 @@ public class Client extends Ice.Application
 
         HelloPrx twoway = HelloPrxHelper.checkedCast(
             communicator().propertyToProxy("Hello.Proxy").ice_twoway().ice_timeout(-1).ice_secure(false));
+
+        PlayPrx twoway1 = PlayPrxHelper.checkedCast(
+                communicator().propertyToProxy("Play.Proxy").ice_twoway().ice_timeout(-1).ice_secure(false));
+
         if(twoway == null)
         {
             System.err.println("invalid object reference");
@@ -89,6 +95,7 @@ public class Client extends Ice.Application
                 }
                 if(line.equals("t"))
                 {
+                    twoway1.playGame();
                     twoway.sayHello();
                 }
                 else if(line.equals("o"))

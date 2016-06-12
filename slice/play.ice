@@ -6,14 +6,14 @@
 
 # define package
 #
-// [["java:package:com.nealma.ice"]]
+//[["java:package:com.nealma.ice"]]
 #
-module hello4service
+module play4service
 {
 
-interface Hello
+interface Play
 {
-    idempotent void sayHello();
+    idempotent void playGame();
 };
 
 };

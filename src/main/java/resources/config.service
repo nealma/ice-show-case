@@ -4,6 +4,7 @@
 # adapter.
 #
 Hello.Endpoints=tcp -h localhost -p 10000:udp -h localhost -p 10000
+Play.Endpoints=tcp -h localhost -p 10001:udp -h localhost -p 10001
 
 #
 # Warn about connection exceptions
